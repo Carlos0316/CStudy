@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="头文件\net">
+      <UniqueIdentifier>{550c4e71-30ac-4195-90f8-2d297ef6293a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\net">
+      <UniqueIdentifier>{c6dd7030-dad5-4dd4-ab9f-268edf6571e6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\async">
+      <UniqueIdentifier>{ea5401de-2639-4184-b552-6c5fdb46dba3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\async">
+      <UniqueIdentifier>{771b49ed-37d0-4e79-8d14-ec5d3eb37f81}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="EventHttpWorker.h">
+      <Filter>头文件\net</Filter>
+    </ClInclude>
+    <ClInclude Include="HttpRequest.h">
+      <Filter>头文件\net</Filter>
+    </ClInclude>
+    <ClInclude Include="HttpWorker.h">
+      <Filter>头文件\net</Filter>
+    </ClInclude>
+    <ClInclude Include="RequestCallback.h">
+      <Filter>头文件\net</Filter>
+    </ClInclude>
+    <ClInclude Include="RequestUtils.h">
+      <Filter>头文件\net</Filter>
+    </ClInclude>
+    <ClInclude Include="ReqWorkerFactory.h">
+      <Filter>头文件\net</Filter>
+    </ClInclude>
+    <ClInclude Include="Thread.h">
+      <Filter>头文件\async</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="LibEventDemo.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="EventHttpWorker.cpp">
+      <Filter>源文件\net</Filter>
+    </ClCompile>
+    <ClCompile Include="RequestUtils.cpp">
+      <Filter>源文件\net</Filter>
+    </ClCompile>
+    <ClCompile Include="ReqWorkerFactory.cpp">
+      <Filter>源文件\net</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
