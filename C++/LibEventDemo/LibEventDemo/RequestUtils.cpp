@@ -2,11 +2,11 @@
 #include "HttpRequest.h"
 #include "RequestUtils.h"
 #include "EventHttpWorker.h";
-#include "ReqWorkerFactory.h"
+#include "HttpWorkers.h"
 
 RequestUtils::RequestUtils()
 {
-	m_worker = ReqWorkerFactory::createWorker();
+	m_worker = HttpWorkers::newEventWorker();
 }
 
 RequestUtils::~RequestUtils()

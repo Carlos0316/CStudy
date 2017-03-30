@@ -157,18 +157,18 @@
     <ClInclude Include="HttpWorker.h" />
     <ClInclude Include="RequestCallback.h" />
     <ClInclude Include="RequestUtils.h" />
-    <ClInclude Include="ReqWorkerFactory.h" />
+    <ClInclude Include="HttpWorkers.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="targetver.h" />
     <ClInclude Include="Thread.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="EventHttpWorker.cpp" />
+    <ClCompile Include="HttpWorkers.cpp" />
     <ClCompile Include="LibEventDemo.cpp">
       <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
     <ClCompile Include="RequestUtils.cpp" />
-    <ClCompile Include="ReqWorkerFactory.cpp" />
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>

@@ -51,11 +51,11 @@
     <ClInclude Include="RequestUtils.h">
       <Filter>头文件\net</Filter>
     </ClInclude>
-    <ClInclude Include="ReqWorkerFactory.h">
-      <Filter>头文件\net</Filter>
-    </ClInclude>
     <ClInclude Include="Thread.h">
       <Filter>头文件\async</Filter>
+    </ClInclude>
+    <ClInclude Include="HttpWorkers.h">
+      <Filter>头文件\net</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -71,7 +71,7 @@
     <ClCompile Include="RequestUtils.cpp">
       <Filter>源文件\net</Filter>
     </ClCompile>
-    <ClCompile Include="ReqWorkerFactory.cpp">
+    <ClCompile Include="HttpWorkers.cpp">
       <Filter>源文件\net</Filter>
     </ClCompile>
   </ItemGroup>

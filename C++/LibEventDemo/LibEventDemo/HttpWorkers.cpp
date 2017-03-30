@@ -1,8 +1,8 @@
 #include "stdafx.h"
-#include "ReqWorkerFactory.h"
+#include "HttpWorkers.h"
 #include "EventHttpWorker.h"
 
-HttpWorker* ReqWorkerFactory::createWorker()
+HttpWorker* HttpWorkers::newEventWorker()
 {
 	return new EventHttpWorker();
 }
