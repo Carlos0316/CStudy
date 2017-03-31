@@ -132,4 +132,9 @@ void EventHttpWorker::httpRequestCallback(struct evhttp_request *req, void *arg)
 		break;
 	}
 	}
+
+	delete request->callback;
+	request->callback = NULL;
+	delete request;
+	request = NULL;
 }

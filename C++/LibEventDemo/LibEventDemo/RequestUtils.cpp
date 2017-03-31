@@ -2,16 +2,15 @@
 #include "HttpRequest.h"
 #include "RequestUtils.h"
 #include "EventHttpWorker.h";
+#include "HttpWorker.h"
 #include "HttpWorkers.h"
 
 RequestUtils::RequestUtils()
 {
-	m_worker = HttpWorkers::newEventWorker();
 }
 
 RequestUtils::~RequestUtils()
 {
-	delete m_worker;
 }
 
 RequestUtils* RequestUtils::getInstance()
@@ -22,5 +21,6 @@ RequestUtils* RequestUtils::getInstance()
 
 void RequestUtils::doRequest(int method, HttpRequest *request)
 {
-	m_worker->doRequest(request);
+	HttpWorker *worker = HttpWorkers::newEventWorker();
+	worker->doRequest(request);
 }

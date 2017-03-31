@@ -44,6 +44,7 @@ int main(int argc, char *argv[])
 	//RequestUtils::getInstance()->doRequest(METHOD_GET, request);
 
 	delete request;
+	request = NULL;
 
 	while (true)
 	{
